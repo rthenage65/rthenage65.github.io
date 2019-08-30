@@ -1,0 +1,1 @@
+document.body.innerHTML = '<nav id="nav-bar"><a class="nav-link" href="index.html">HOME</a><a class="nav-link" href="games.html">GAMES</a><a class="nav-link" href="websites.html">WEBSITES</a><a class="nav-link" href="resume.html">RESUMÉ</a><div class="nav-link small"><img class="nav-img" src="tree.png"/></div></nav>' + document.body.innerHTML;
