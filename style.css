@@ -40,6 +40,91 @@ nav {
     color: #5b507a;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-bottom: 200px;
+}
+
+.home-section {
+    background-color: #c9b1bd;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.home-section-left {
+    margin-left: 10%;
+}
+
+.home-section-right {
+    margin-left: 30%;
+}
+
+.home-section-title {
+    color: #567568;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-section-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.home-section-list-item {
+    color: #567568;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25%;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.game-section {
+    background-color: #c9b1bd;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    margin: 5%;
+}
+
+.game-section-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.game-section-title {
+    color: #567568;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.game-section-game {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.game-section-game iframe {
+    transform: scale(0.7);
+    margin: 0;
+}
+
+.game-section-info {
+    color: #567568;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 30%;
+    margin-left: 5%;
 }
 
 footer {
