@@ -1,9 +1,13 @@
 body {
     background-color: #d5dfe5;
+    display: grid;
+    grid-template: repeat(10, 100px) / repeat(5, 1fr);
+    grid-row-gap: 10px;
 }
 
 nav {
-    width: 100%;
+    grid-column: span 5;
+    grid-row: span 1;
     display: flex;
     margin: 0 0 100px;
     padding: 0;
@@ -19,11 +23,14 @@ nav {
     color: #567568;
     text-align: center;
     text-decoration: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .small {
     flex: 1;
-    padding: 5px;
 }
 
 .nav-link:hover {
@@ -35,6 +42,8 @@ nav {
 }
 
 .home-heading {
+    grid-column: span 5;
+    grid-row: span 2;
     font-size: 100px;
     font-weight: bolder;
     color: #5b507a;
@@ -47,17 +56,16 @@ nav {
     background-color: #c9b1bd;
     display: flex;
     flex-direction: column;
-    width: 60%;
     padding: 20px;
-    margin-top: 5%;
+    grid-row: span 2;
 }
 
-.home-section-left {
-    margin-left: 10%;
+.section-left {
+    grid-column: 1 / span 4;
 }
 
-.home-section-right {
-    margin-left: 30%;
+.section-right {
+    grid-column: 2 / span 4;
 }
 
 .home-section-title {
@@ -85,55 +93,57 @@ nav {
 
 .game-section {
     background-color: #c9b1bd;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding: 20px;
-    margin: 5%;
+    display: grid;
+    grid-template: repeat(12, 25px) / repeat(12, 1fr);
+    grid-row: span 3;
 }
 
 .game-section-title {
     color: #567568;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    width: 100%;
-}
-
-.game-section-content {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 12;
+    grid-row: span 1;
 }
 
 .game-section-game {
-    width: 65%;
     margin: 0;
     padding: 0;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+    grid-column: span 8;
+    grid-row: span 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .game-section-game iframe {
-    transform: scale(0.7);
+    transform: scaleX(0.3) scaleY(0.3);
+    width: 1000px;
+    height: 610px;
     margin: 0;
-    width: 100%;
 }
 
 .game-section-info {
     color: #567568;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    width: 30%;
-    margin-left: 5%;
+    grid-column: span 4;
+    grid-row: span 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
-    margin-top: 200px;
-    text-align: center;
+    grid-column: span 5;
+    grid-row: span 2;
     font-size: 20px;
     color: #567568;
     font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
